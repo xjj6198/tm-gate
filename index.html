@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="0;url=https://projects-jewelry-emotional-statements.trycloudflare.com">
+<title>盘中反T监控台 · 入口</title>
+<style>
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+       background:#f5f7fa;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:#1f2430}
+  .card{background:#fff;border:1px solid #e3e8ef;border-radius:14px;padding:28px 26px;max-width:88vw;
+        width:360px;box-shadow:0 4px 16px rgba(20,24,32,.06);text-align:center}
+  .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px;
+       background:#1f4fd8;animation:p 1s infinite alternate}
+  @keyframes p{from{opacity:.35}to{opacity:1}}
+  h1{font-size:17px;margin:0 0 10px}
+  p{font-size:13px;line-height:1.7;color:#5a6472;margin:8px 0}
+  a{color:#1f4fd8;font-weight:600;text-decoration:none;word-break:break-all}
+  .t{font-size:12px;color:#98a1ad;margin-top:14px}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1><span class="dot"></span>正在进入盘中反T监控台…</h1>
+  <p>本页是<b>固定入口</b>，每次自动跳转到当前监控地址。<br>
+     若 3 秒后没有自动跳转，请点这里：<br><a id="go" href="https://projects-jewelry-emotional-statements.trycloudflare.com">https://projects-jewelry-emotional-statements.trycloudflare.com</a></p>
+  <p>首次使用需输入配对码（6 位数字，见监控台主人提供的信息）。</p>
+  <div class="t">入口地址不会变，可收藏到手机主屏 · 最后更新 2026-10-18 20:27</div>
+</div>
+<script>
+  (function(){var t=3;var el=document.getElementById('go');
+    var iv=setInterval(function(){t--;if(t<=0){clearInterval(iv);location.replace(el.href);}
+      document.querySelector('h1').innerHTML='<span class="dot"></span>正在进入盘中反T监控台… '+t+' 秒';},1000);})();
+</script>
+</body>
+</html>
